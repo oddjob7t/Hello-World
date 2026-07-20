@@ -1,0 +1,9 @@
+name: known-good
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "known-good on oddjob7t — $GITHUB_SHA"
